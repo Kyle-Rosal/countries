@@ -1,0 +1,37 @@
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app__countries-list-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  width: 187px;
+  margin: 36px 13px 23px 40px;
+}
+.app__main-content-wrapper {
+  width: 560px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 36px 20px 40px 0;
+}
+.app__title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18.15px;
+  text-align: center;
+}
+.app__info-wrapper {
+  margin-right: 28px;
+}
+.app__title-2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #A5A2A2;
+  word-spacing: 5px;
+}
+.app__sub-title {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.31px;
+}
