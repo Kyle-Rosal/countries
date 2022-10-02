@@ -19,11 +19,13 @@ const CountriesList = (props) =>  {
     const newOffset = (e.selected * itemsPerPage) % props.countries.length;
     setItemOffset(newOffset);
   };
-
+  
   const handleSelected = (e) => {
-    // debugger
+    // // debugger
     console.log(e.target.innerHTML, "Checks country name ")
     const countryUrl = e.target.innerHTML
+    props.setActive(countryUrl)
+
     Promise.all([
       // fetch("https://restcountries.com/v3.1/name/Peru"),
       // fetch("https://en.wikipedia.org/api/rest_v1/page/summary/Peru"),
@@ -33,6 +35,7 @@ const CountriesList = (props) =>  {
       return Promise.all(responses.map(function (response) {
         return response.json();
       }));
+
     }).then(function (data) {
       console.log(data, "Checks Data");
       console.log(data[0][0].name.common, "Checks current details")
@@ -58,6 +61,7 @@ const CountriesList = (props) =>  {
     }).catch(function (error) {
       console.log(error);
     });
+    
   }
 
    return (
@@ -74,7 +78,7 @@ const CountriesList = (props) =>  {
             {currentItems.map((country) => {
               return (
                 <li
-                  onClick={() => props.setActive(country.name.common)}
+                  onClick={handleSelected}
                   className =
                     { 
                       props.active === country.name.common
@@ -84,11 +88,9 @@ const CountriesList = (props) =>  {
                           'countries-list__txt-black' 
                     } 
                   key={country.name.common}
-                >
-                  <a onClick={handleSelected}>
+                  >
                     {country.name.common}
-                  </a>
-                </li>
+                </li>                
               )
             })}
           </ul>
