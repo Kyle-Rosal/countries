@@ -18,7 +18,7 @@
 .app__title {
   font-size: 15px;
   font-weight: 600;
-  line-height: 18.15px;
+  line-height: 1.15;
   text-align: center;
 }
 .app__info-wrapper {
@@ -33,5 +33,5 @@
 .app__sub-title {
   font-size: 11px;
   font-weight: 400;
-  line-height: 13.31px;
+  line-height: 1.31;
 }

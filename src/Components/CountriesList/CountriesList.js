@@ -74,7 +74,6 @@ const CountriesList = (props) =>  {
         <div className='countries-list__txt-wrapper'>
 
           <ul className='countries-list__txt-container'>
-
             {currentItems.map((country) => {
               return (
                 <li

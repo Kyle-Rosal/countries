@@ -19,7 +19,7 @@
 .countries-list__txt-black {
     font-size: 12px;
     font-weight: 400;
-    line-height: 14.52px;
+    line-height: 1.4;
     word-wrap: break-word;
 }
 .countries-list__txt-black:hover {
@@ -28,7 +28,7 @@
 .countries-list__txt-red {
     font-size: 12px;
     font-weight: 700;
-    line-height: 14.52px;
+    line-height: 1.4;
     word-wrap: break-word;
     color: #F02121;
 }
