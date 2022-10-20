@@ -58,6 +58,7 @@ const CountriesList = (props) =>  {
         }
       })
       console.log(props.countryInformation.commonName, "Check new data");
+      
     }).catch(function (error) {
       console.log(error);
     });

@@ -5,11 +5,7 @@ import MainContent from './Components/MainContent/MainContent';
 import axios from 'axios';
 
 const App = (props) =>  {
-
-  const [active, setActive] = useState(false)
-
   const [countries, setCountries] = useState([]); 
-
   const [countryInformation, setCountryInformation] = useState(
     // []
     {
@@ -25,6 +21,7 @@ const App = (props) =>  {
       capital: "Tokyo"
     }
   );
+  const [active, setActive] = useState(false)
 
   const fetchCountries = async () => {
     try {
